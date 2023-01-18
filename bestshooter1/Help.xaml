@@ -1,0 +1,75 @@
+﻿<Window x:Class="bestshooter1.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bestshooter1"
+        mc:Ignorable="d"
+        Title="Help" WindowState="Maximized">
+    <Grid Background="{DynamicResource glassBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.25*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Foreground="DarkRed" Grid.Row="0" FontSize="48" Content="راهنمای برنامه" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Grid Grid.Row="1" Name="body">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Name="desc">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.25*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="توضیحات" Foreground="DarkRed" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" FontSize="20" HorizontalAlignment="Center">هدف از تولید و توسعه این برنامه ارایه خدمات</Label>
+                    <Label Grid.Row="1" FontSize="20" HorizontalAlignment="Center">به شما گیمر های عزیز میباشد.شما می توانید</Label>
+                    <Label Grid.Row="2" FontSize="20" HorizontalAlignment="Center">'INJECT' با انتخاب پکیج مورد نظر و زدن دکمه</Label>
+                    <Label Grid.Row="3" FontSize="20" HorizontalAlignment="Center">از پکیج استفاده نمایید.هر بار استفاده شما</Label>
+                    <Label Grid.Row="4" FontSize="20" HorizontalAlignment="Center">از پکیج باعث کم شدن ظرفیت پکیج می شود</Label>
+                    <Label Grid.Row="5" FontSize="20" HorizontalAlignment="Center">پس این موضوع را در نظر داشته باشید</Label>
+                    <Label Grid.Row="6" FontSize="20" HorizontalAlignment="Center">همچنین برای استفاده از این برنامه باید به</Label>
+                    <Label Grid.Row="7" FontSize="20" HorizontalAlignment="Center" Foreground="Red">اینترنت متصل باشید</Label>
+
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="0" Name="notes">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.25*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="نکات" Foreground="DarkRed" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" FontSize="20" HorizontalAlignment="Center">هر شناسه خرید مربوط به پکیج های یک بازی است*</Label>
+                    <Label Grid.Row="1" FontSize="20" HorizontalAlignment="Center">در صورت در دسترس نبودن سرویس با مسئول سایت تماس بگیرید*</Label>
+                    <Label Grid.Row="2" FontSize="20" HorizontalAlignment="Center">که برای  bloody موفق برنامه 'INJECT' بعد از*</Label>
+                    <Label Grid.Row="3" FontSize="20" HorizontalAlignment="Center">شما ایمیل شده است استفاده نمایید</Label>
+                    <Label Grid.Row="4" FontSize="20" HorizontalAlignment="Center">به حقوق هم احترام بگذاریم و از به اشتراک*</Label>
+                    <Label Grid.Row="5" FontSize="20" HorizontalAlignment="Center">گذاشتن شناسه خرید خودداری کنیم</Label>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Button Grid.Row="2" Margin="500,25,500,25" BorderBrush="CadetBlue" BorderThickness="3" Background="Transparent" Foreground="DarkRed" FontSize="20" Click="Button_Click">بستن</Button>
+    </Grid>
+</Window>
